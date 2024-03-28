@@ -9,12 +9,10 @@ node {
     stage('Docker') {
         sh 'docker build -t crapstur/roundcubemail .'
     }
-    // stage('Ansible') {
-    //   ansiblePlaybook (
-    //       colorized: true, 
-    //       become: true,
-    //       playbook: 'playbooks/deploy-app.yaml',
-    //       inventory: 'hosts/hosts.ini'
-    //   )
-    // }
+    stage('Ansible') {
+      ansiblePlaybook (
+          colorized: true,
+          playbook: 'playbook.yml'
+      )
+    }
 }
