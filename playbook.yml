@@ -8,5 +8,5 @@
         ports:
           - "8081:80"
         volumes:
-          - /Users/rcapouillez/Documents/Development/Ynov/automatisation/srv/roundcube:/var/www/html
+          - /Users/rcapouillez/Documents/Development/Ynov/automatisation/jenkins-ynov/srv/roundcube:/var/www/html
         restart_policy: always
