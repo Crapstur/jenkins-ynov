@@ -3,12 +3,12 @@ node {
         git branch: 'main',
             url: 'https://github.com/Crapstur/jenkins-ynov.git'
     }
-    stage('TMP') {
-        sh 'pwd'
-    }
-    // stage('Docker Build') {
-    //     sh 'docker build -t jenkins-ynov .'
+    // stage('TMP') {
+    //     sh 'pwd'
     // }
+    stage('Docker') {
+        sh 'docker build -t crapstur/roundcubemail .'
+    }
     // stage('Ansible') {
     //   ansiblePlaybook (
     //       colorized: true, 
