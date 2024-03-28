@@ -16,6 +16,6 @@ node {
         sh 'docker build -t crapstur/roundcubemail .'
     }
     stage('Docker Run') {
-        sh 'docker run -p 80:80 crapstur/roundcube'
+        sh 'docker run -d -p 80:80 crapstur/roundcube'
     }
 }
