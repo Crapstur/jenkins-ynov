@@ -6,7 +6,7 @@
         name: roundcube
         image: crapstur/roundcubemail
         ports:
-          - "8080:80"
+          - "8081:80"
         volumes:
           - /Users/rcapouillez/Documents/Development/Ynov/automatisation/srv/roundcube:/var/www/html
         restart_policy: always
