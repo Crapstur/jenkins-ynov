@@ -1,0 +1,12 @@
+- name: Deploy RoundCube container
+  hosts: localhost
+  tasks:
+    - name: Deploy RoundCube container
+      docker_container:
+        name: roundcube
+        image: crapstur/roundcubemail
+        ports:
+          - "8080:80"
+        volumes:
+          - /srv/roundcube:/var/www/html
+        restart_policy: always
