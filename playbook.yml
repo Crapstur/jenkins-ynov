@@ -8,5 +8,5 @@
         ports:
           - "8080:80"
         volumes:
-          - /srv/roundcube:/var/www/html
+          - ./srv/roundcube:/var/www/html
         restart_policy: always
