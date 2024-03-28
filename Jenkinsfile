@@ -4,7 +4,7 @@ node {
             url: 'https://github.com/Crapstur/jenkins-ynov.git'
     }
     stage('TMP') {
-        sh 'ls -l'
+        sh 'pwd'
     }
     // stage('Docker Build') {
     //     sh 'docker build -t jenkins-ynov .'
